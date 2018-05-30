@@ -27,7 +27,7 @@ class MultivariateDataGenerator:
             self.shift_config = shift_config
             self.max_shift = max(list(self.shift_config.values()))
         self.behavior = behavior
-        self.behavior_config = behavior_config if not None else {}
+        self.behavior_config = behavior_config if behavior_config is not None else {}
 
         self.STREAM_LENGTH = stream_length
         self.N = n
